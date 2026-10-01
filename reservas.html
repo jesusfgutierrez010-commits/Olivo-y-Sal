@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reservas | Olivo &amp; Sal</title>
+<meta name="description" content="Reserva tu mesa en Olivo & Sal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="Olivo y Sal, inicio"><i></i>Olivo &amp; Sal</a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul><li><a class="link" href="index.html">Inicio</a></li><li><a class="link" href="quienes-somos.html">Nuestra historia</a></li><li><a class="link" href="carta.html">La carta</a></li><li><a class="link" href="servicios.html">Servicios</a></li><li><a class="link" href="reservas.html" aria-current="page">Reservas</a></li></ul>
+      <button class="theme-btn" id="themeBtn" type="button" aria-pressed="false">Modo noche</button>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+  </div>
+</header>
+<main id="main">
+
+<div class="wrap page-title">
+  <h1>Reservas</h1>
+  <p class="lead">Cuéntanos cuándo vienes y te confirmamos por correo.</p>
+</div>
+<section>
+  <div class="wrap contact-grid">
+    <form id="contactForm" novalidate aria-label="Formulario de reserva">
+      <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" autocomplete="name"><span class="err"></span></div>
+      <div class="row2">
+        <div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email"><span class="err"></span></div>
+        <div class="field"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" autocomplete="tel"><span class="err"></span></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="fecha">Fecha</label><input id="fecha" name="fecha" type="date"><span class="err"></span></div>
+        <div class="field"><label for="hora">Hora</label>
+          <select id="hora" name="hora"><option value="">Selecciona</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>19:30</option><option>20:30</option><option>21:30</option><option>22:30</option></select><span class="err"></span></div>
+      </div>
+      <div class="field"><label for="personas">Personas</label><input id="personas" name="personas" type="number" min="1" max="10" value="2"><span class="err"></span></div>
+      <div class="field"><label for="mensaje">Comentarios (opcional)</label><textarea id="mensaje" name="mensaje" rows="4" placeholder="Alergias, mesa en terraza, celebración…"></textarea><span class="err"></span></div>
+      <button class="btn" type="submit">Solicitar mesa</button>
+      <div class="ok" id="ok" role="status"></div>
+    </form>
+    <aside>
+      <h2>Dónde estamos</h2>
+      <ul class="info-list">
+        <li><b>Dirección</b>Paseo Marítimo 12, frente a la playa</li>
+        <li><b>Horario</b>Martes a domingo · 12:00–15:30 y 19:30–23:00</li>
+        <li><b>Correo</b>hola@olivoysal.com</li>
+        <li><b>Teléfono</b>+00 123 456 7890</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Olivo &amp; Sal</strong> · Paseo Marítimo 12 · <a href="reservas.html">Reservar mesa</a></p>
+    <p>Cocina mediterránea de mercado · © 2026</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

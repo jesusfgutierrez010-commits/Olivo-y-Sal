@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios | Olivo &amp; Sal</title>
+<meta name="description" content="Almuerzo ejecutivo, degustación, celebraciones y cotizador para grupos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="Olivo y Sal, inicio"><i></i>Olivo &amp; Sal</a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul><li><a class="link" href="index.html">Inicio</a></li><li><a class="link" href="quienes-somos.html">Nuestra historia</a></li><li><a class="link" href="carta.html">La carta</a></li><li><a class="link" href="servicios.html" aria-current="page">Servicios</a></li><li><a class="link" href="reservas.html">Reservas</a></li></ul>
+      <button class="theme-btn" id="themeBtn" type="button" aria-pressed="false">Modo noche</button>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+  </div>
+</header>
+<main id="main">
+
+<div class="wrap page-title">
+  <h1>Servicios</h1>
+  <p class="lead">Para una comida entre semana, una celebración o un evento de empresa.</p>
+</div>
+<section>
+  <div class="wrap">
+    <div class="services">
+      <div class="service"><h3>Almuerzo ejecutivo</h3><p>Entrada, principal y postre de martes a viernes, servido en 60 minutos.</p></div>
+      <div class="service"><h3>Menú degustación</h3><p>Seis tiempos con maridaje opcional. Se reserva con 48 horas de antelación.</p></div>
+      <div class="service"><h3>Celebraciones</h3><p>Cumpleaños, aniversarios y comuniones en la terraza o en un salón privado.</p></div>
+      <div class="service"><h3>Para llevar</h3><p>Arroces y platos de horno listos para recoger. Pedido hasta las 18:00.</p></div>
+    </div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap">
+    <form class="calc" id="calc" onsubmit="return false" aria-label="Cotizador de menú para grupos">
+      <div>
+        <h2>Cotiza tu grupo</h2>
+        <div class="field"><label for="menu">Tipo de menú</label>
+          <select id="menu"><option value="almuerzo">Almuerzo ejecutivo ($22)</option><option value="degustacion">Degustación ($48)</option><option value="celebracion">Celebración ($60)</option></select></div>
+        <div class="field"><label for="pers">Personas (mínimo 4)</label><input id="pers" type="number" min="4" value="8"></div>
+        <label class="check"><input id="bebidas" type="checkbox"> Incluir bebidas (+$12 por persona)</label>
+      </div>
+      <div class="result" aria-live="polite">
+        <p>Total estimado</p>
+        <div class="total" id="total">$0</div>
+        <p id="detalle"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Olivo &amp; Sal</strong> · Paseo Marítimo 12 · <a href="reservas.html">Reservar mesa</a></p>
+    <p>Cocina mediterránea de mercado · © 2026</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

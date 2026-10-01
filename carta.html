@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La carta | Olivo &amp; Sal</title>
+<meta name="description" content="Entradas, principales, postres y bebidas de Olivo & Sal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="Olivo y Sal, inicio"><i></i>Olivo &amp; Sal</a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul><li><a class="link" href="index.html">Inicio</a></li><li><a class="link" href="quienes-somos.html">Nuestra historia</a></li><li><a class="link" href="carta.html" aria-current="page">La carta</a></li><li><a class="link" href="servicios.html">Servicios</a></li><li><a class="link" href="reservas.html">Reservas</a></li></ul>
+      <button class="theme-btn" id="themeBtn" type="button" aria-pressed="false">Modo noche</button>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menú</button>
+  </div>
+</header>
+<main id="main">
+
+<div class="wrap page-title">
+  <h1>La carta</h1>
+  <p class="lead">Elige una categoría. Marcamos los platos vegetarianos y sin gluten.</p>
+</div>
+<section>
+  <div class="wrap">
+    <div class="tabs" id="tabs" role="tablist" aria-label="Categorías de la carta"></div>
+    <ul class="carta" id="carta" role="tabpanel"></ul>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Olivo &amp; Sal</strong> · Paseo Marítimo 12 · <a href="reservas.html">Reservar mesa</a></p>
+    <p>Cocina mediterránea de mercado · © 2026</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
